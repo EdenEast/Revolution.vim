@@ -7,7 +7,7 @@ A dark color scheme based on [Corperation][]
 There is still alot of room for improvement so feel free to send me idea 
 through the [issue tracker][] or pull request.
 
-[issue tracker]: 
+[issue tracker]: https://github.com/CruizeMissile/Revolution-vim/issues
 
 Instalation
 -----------
