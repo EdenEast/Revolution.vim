@@ -4,7 +4,7 @@ A dark color scheme based on [Corperation][]
 
 [Corperation]: http://www.vim.org/scripts/script.php?script_id=2432
 
-There is still alot of room for improvement so feel free to send me idea 
+There is still a lot of room for improvement so feel free to send me idea 
 through the [issue tracker][] or pull request.
 
 [issue tracker]: https://github.com/CruizeMissile/Revolution-vim/issues
@@ -33,7 +33,7 @@ Screenshots
 These are some screenshots of the theme but they might no be the most up to 
 date (will try my best). Even though they might not be the most up to date
 they will give you a good idea of what it is about. (NOTE: Some of these
-screen shots were taken on different enviroments and the fonts are different.
+screen shots were taken on different environments and the fonts are different.
 Revolution does not change the font that you set.)
 
 ##C++
@@ -60,7 +60,7 @@ Revolution does not change the font that you set.)
 
 ![Screenshot](http://i.imgur.com/lcVO0am.png)
 
-##Pythn
+##Python
 
 ![Screenshot](http://i.imgur.com/cpvrtAQ.png)
 
@@ -68,7 +68,7 @@ Revolution does not change the font that you set.)
 
 ![Screenshot](http://i.imgur.com/DMF2nXm.png)
 
-##lua
+##Lua Script
 
 ![Screenshot](http://i.imgur.com/bL0SQrc.png)
 
@@ -80,4 +80,8 @@ Revolution does not change the font that you set.)
 
 ![Screenshot](http://i.imgur.com/0Ci4n7I.png)
 
+## License
+The MIT License (MIT)
+Revolution is licensed under the [MIT][] license.
 
+[MIT]: http://opensource.org/licenses/MIT
