@@ -1,7 +1,9 @@
 #Revolution
 
-A dark color scheme based on [Corperation][]
+A dark color scheme based on [Corperation][]. Check out the color scheme on
+[VimColors][]!
 
+[VimColors]: http://vimcolors.com/185/Revolution/dark
 [Corperation]: http://www.vim.org/scripts/script.php?script_id=2432
 
 There is still a lot of room for improvement so feel free to send me idea 
