@@ -21,6 +21,7 @@
 " variable. The # is a separator that maps with the directory structure. If
 " you get this wrong, Vim will complain loudly.
 let g:airline#themes#Revolution#palette = {}
+let g:colors_name = 'Revolution'
 
 " First let's define some arrays. The s: is just a VimL thing for scoping the
 " variables to the current script. Without this, these variables would be
@@ -99,4 +100,3 @@ let g:airline#themes#Revolution#palette.ctrlp = airline#extensions#ctrlp#generat
       \ [ '#d7d7ff' , '#5f00af' , 189 , 55  , ''     ],
       \ [ '#ffffff' , '#875fd7' , 231 , 98  , ''     ],
       \ [ '#5f00af' , '#ffffff' , 55  , 231 , 'bold' ])
-
