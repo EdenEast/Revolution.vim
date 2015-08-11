@@ -1,14 +1,4 @@
-"" Vim color file - Revolution
-"set background=dark
-"if version > 580
-	"hi clear
-	"if exists("syntax_on")
-		"syntax reset
-	"endif
-"endif
-
-"set t_Co=256
-"let g:colors_name = "Revolution"
+"this is using the vim-gotham style of setting most colors
 
 hi clear
 if exists('syntax on') | syntax reset | endif
@@ -23,7 +13,11 @@ endfunction
 function! s:AddGroundValues(accumulator, ground, color)
   let new_list = a:accumulator
   for [where, value] in items(a:color)
-    call add(new_list, where . a:ground . '=' . value)
+    if value == "NONE" || value == "none" || value == ""
+      call add(new_list, where . a:ground . '= NONE')
+    else
+      call add(new_list, where . a:ground . '=' . value)
+    endif
   endfor
 
   return new_list
@@ -76,7 +70,7 @@ let s:colors.base11 = { 'gui': '#cfcfcf', 'cterm': 252 }
 let s:colors.base12 = { 'gui': '#a33202', 'cterm': 130 }
 let s:colors.base13 = { 'gui': '#ff0d0d', 'cterm': 196 }
 let s:colors.base14 = { 'gui': '#f9f9ff', 'cterm': 189 }
-let s:colors.base15 = { 'gui': ''       , 'cterm': 254 }
+let s:colors.base15 = { 'gui': 'NONE'   , 'cterm': 254 }
 let s:colors.base16 = { 'gui': '#6b6b6b', 'cterm': 242 }
 let s:colors.base17 = { 'gui': '#a3b4ba', 'cterm': 109 }
 let s:colors.base18 = { 'gui': '#c4c7c8', 'cterm': 251 }
@@ -97,19 +91,20 @@ let s:colors.blue    = { 'gui': '#195466', 'cterm': 24  }
 let s:colors.cyan    = { 'gui': '#33859E', 'cterm': 44  }
 let s:colors.green   = { 'gui': '#2aa889', 'cterm': 78  }
 
+let s:colors.none    = { 'gui': 'NONE', 'cterm': 'NONE'  }
+
 " Normal modes
 call s:Col('Normal', 'base0', 'base3')
 
 " Line, cursor and so on.
 call s:Col('Cursor', 'base15', 'base14')
-call s:Col('CursorLine', 'base0', 'base24')
+call s:Col('CursorLine', 'none', 'base24')
 call s:Col('CursorColumn', 'base0', 'base23')
 call s:Col('cursorim', 'base3', 'base1')
 
 " Sign column, line numbers.
 call s:Col('LineNr', 'base8')
-"call s:Col('CursorLineNr', )
-call s:Col('SignColumn', 'base3', 'base5')
+call s:Col('SignColumn', 'base3', 'base3')
 call s:Col('ColorColumn', 'base0', 'base24')
 
 " Visual selection.
@@ -170,7 +165,7 @@ call s:Attr('FoldColumn', 'bold')
 
 " Searching.
 call s:Col('Search', 'base0', 'base1')
-call s:Attr('IncSearch', 'base0', 'base1')
+call s:Col('IncSearch', 'base0', 'base1')
 
 " Popup menu.
 call s:Col('Pmenu', 'base0', 'base3')
