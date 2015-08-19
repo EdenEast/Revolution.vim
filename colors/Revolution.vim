@@ -223,6 +223,9 @@ call s:Col('GitGutterChange', 'yellow', 'base3')
 call s:Col('GitGutterDelete', 'red', 'base3')
 call s:Col('GitGutterChangeDelete', 'orange', 'base3')
 
+" vim-better-whitespace
+call s:Col('ExtraWhitespace', 'violet', 'yellow')
+
 " Cleanup =====================================================================
 
 unlet s:colors
